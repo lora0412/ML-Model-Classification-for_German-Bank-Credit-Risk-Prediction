@@ -1,1 +1,1 @@
-﻿# IRONHACJ Data Analytics Week 7 Project German Credit Risk Analysis
+﻿# IRONHACK Data Analytics Week 7 Project German Credit Risk Analysis
