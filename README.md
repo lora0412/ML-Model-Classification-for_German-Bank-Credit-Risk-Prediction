@@ -1,1 +1,1 @@
-﻿# Week_7_Project_MACHINE_LEARNING
+﻿# IRONHACK Data Analytics Week 7 Project German Credit Risk Analysis
