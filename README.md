@@ -12,41 +12,41 @@
 9. [Contact Information](#contact-information)
 
 ## Introduction
-Welcome to the Music Recommendation System project! This project aims to develop a content-based music recommendation system using data from Spotify's Top 50 EDM Playlists from Germany, Netherlands, Portugal, Spain, US, and the UK. The system leverages Spotify's API to collect data and provides personalized music recommendations.
+A small bank in Germany wants to automize the process of credit risk evaluation. 
 
 ## Project Overview
-- Collecting data from Spotify's API for the Top 50 EDM Playlists from the specified countries.
-- Analyzing and processing the collected data.
-- Developing a content-based recommendation algorithm using machine learning models.
-- Evaluating the performance of the recommendation system.
-- Providing insights and visualizations based on the analysis.
+sing supervised machine learning to predict German credit card approval, incorporating vintage analysis and addressing data imbalance.
 
 ## Data Description
-The data for this project is obtained from Spotify's API, focusing on the Top 50 EDM Playlists from Germany, Netherlands, Portugal, Spain, US, and the UK. The data includes:
-
-- Track information (e.g.,track_id, track_name, artist_name, album_name, release_date, duration_ms, popularity)
-- Audio features (e.g.,danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo)
+Dataset includes personal and credit card applicant information for machine learning model development.
+Columns includes: Age, Sex, Job, Housing, Saving accounts, Checking account, Credit amount, Duration, Purpose, Risk
 
 ## Analysis and Methodology
-The analysis and methodology section covers the following:
-- Data Collection: Using Spotify's API to gather playlist and track data.
-- Data Cleaning and Preprocessing: Using Python to handling duplicates and missing values and normalizing data.
-- Feature Engineering: Extracting relevant features for the recommendation system.
-- Machine Learning Models: Utilizing K-means clustering and dimensionality reduction techniques like PCA and ISOMAP to enhance the recommendation system.
-- Evaluation: Assessing the performance of the recommendation system using appropriate metrics - Silhouette Score.
-- Content-Based Recommendation: Developing an algorithm that recommends tracks based on audio features similarity.
+1. Python for data analysis, leveraging libraries such as pandas, numpy, seaborn, matplotlib, sklearn.model_selection, sklearn.preprocessing, sklearn.metrics, sklearn.tree, sklearn.neighbors and sklearn.ensemble.
+2. Exploratory Data Analysis (EDA)
+3. Machine learning models:
+   - Single: KNN; Decision Tree
+   - Ensembled: Random Forest, Bagging&Pasting, Adaptive Boosting 
+
+Key analyses include:
+- Data Selection and Preparation
+- Feature Engineering and Selection
+- Machine Learning Model Building and Evaluation
+- Hyperparameter Tuning
 
 ## Results and Insights
-This section will present the findings from the analysis, including:
-- Insights into the characteristics of the Top 50 EDM tracks in each country.
-- Performance metrics of the recommendation system: Best performance clusters: 5 with Silhouette Score 0.26.
-- Visualizations that highlight key trends and patterns in the data by radar chart.
+Overall, our machine learning prediction is solid, which shows a good model performance with reasonable error rates and a high proportion of explained variance.
+1. Best Performance Model: Adaptive Boosting
+2. Accuracy:
+   - Initial: 70.5%
+   - After Hyperparameter: 71.5%
+3. Stability and Error Consistency: MAE: 0.29 & RMSE: 0.54
+4. Explained Variance:  R² score: 0.71, which indicates strong relationship between the input features and the target variable.
 
 ## Installation and Usage
-1. Python 3.8 or higher
-  - Install required libraries: `pip install numpy, pandas, glob, requests, base64, time, logging, spotipy, statsmodels.api, matplotlib.pyplot, seaborn, sklearn`.
-  - Run the analysis script: `Spotify_Machine Learning_6_features.ipynb`,  `Spotify_API_EU_US_TOP_50_EDM_playlists_tracks.ipynb`
-2. Spotify Developer Account (to access Spotify API)
+- Install Python 3.8 or higher.
+- Install required libraries: `pip install pandas, numpy, seaborn, matplotlib, sklearn.model_selection, sklearn.preprocessing, sklearn.metrics, sklearn.tree, sklearn.neighbors and sklearn.ensemble`.
+- Run the analysis script: `German_Credit_Analysis_final.ipynb`
 
 ## Contributing
 Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
